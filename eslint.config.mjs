@@ -1,11 +1,9 @@
 import importHelpers from 'eslint-plugin-import-helpers';
 import eslintConfigPrettier from "eslint-config-prettier";
-import pluginQuery from '@tanstack/eslint-plugin-query';
 import react from 'eslint-plugin-react';
 import globals from 'globals';
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-
 import { FlatCompat } from "@eslint/eslintrc";
 import js from '@eslint/js';
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
@@ -54,7 +52,6 @@ export default [
       react,
       '@typescript-eslint': typescriptEslint,
       'import-helpers': importHelpers,
-      '@tanstack/query': pluginQuery,
     },
 
     languageOptions: {
@@ -107,7 +104,6 @@ export default [
           "endOfLine": "auto"
         }
       ],
-      '@tanstack/query/exhaustive-deps': 'error',
     }
   },
   eslintConfigPrettier,
